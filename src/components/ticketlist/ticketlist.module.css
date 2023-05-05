@@ -1,0 +1,30 @@
+.list {
+    /* width: 80%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+  }
+  .btn{
+    width: 100%;
+    height: 62px;
+    background: #4E148C;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F7F9F7;
+    margin-top: 74px;
+    }
+
+    @media(max-width: 768px){
+      .list{
+        margin-top: 100px;
+      }
+    }
+
+    @media(max-width: 430px){
+      .btn{
+        width: 420px;
+      }
+    }

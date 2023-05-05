@@ -1,0 +1,85 @@
+.filter {
+    width: 272px;
+    height: 258px;
+    background: #E8EBF2;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    /* padding: 19px; */
+
+  }
+  .name{
+    font-size: 20px;
+    color: #4E148C;
+    margin: 0px;
+    padding: 19px;
+    text-align: left;
+    ;
+}
+ .row{
+    margin-left: 42px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: flex-start;
+ }
+input[type="checkbox"] {
+    display: none;
+  }
+  .list label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #858AE3;
+    align-self: center;
+
+  }
+  .list label:before {
+    content: " ";
+    display: inline-block;
+    margin-right: 19px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #4E148C;
+    border-radius: 4px;
+    border-image: initial;
+    vertical-align: middle;
+  }
+
+  input:checked + label:before {
+    content:url('../../../public/tick.png')
+  }
+  @media(max-width: 768px){
+    .filter{
+      background: #4E148C;
+    }
+
+    .name{
+      color:#E8EBF2;
+    }
+    .list label:before {
+      border: 1px solid #E8EBF2;
+    }
+    .list label{
+      color:#E8EBF2;
+    }
+
+    input:checked + label:before {
+      content:url('../../../public/optionarrow.png')
+    }
+  }
+
+  @media(max-width: 430px){
+    .list label{
+      font-size: 12px;
+    }
+    .name{
+      font-size: 14px;
+    }
+/*   
+    .wrapper{
+      margin-left: 20px;
+    } */
+  }

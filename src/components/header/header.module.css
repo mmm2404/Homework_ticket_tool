@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:34px;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E148C;
+    
+}
+
+@media(max-width: 768px) {
+    .title{
+        display:none;
+    }
+    .header img {
+        margin: 0 auto;
+    }
+    
+}
